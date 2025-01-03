@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.12.0
+
+### New/Changed Features
+
+* Bump QEMU to 9.2.0
+
 ## 0.11.0
 
 ### New/Changed Features
