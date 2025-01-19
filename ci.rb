@@ -358,7 +358,10 @@ class CIRunner
       execute "brew", "install", *packages, env: { HOMEBREW_NO_INSTALL_CLEANUP: true }
       execute "pip3", "install", "packaging"
 
-      execute "ls", "-laR", "/usr/local/opt/pixman/lib/", "/usr/local/lib/", "/usr/local/opt/lib"
+      execute "echo TEST"
+      execute "brew ls --verbose pixman"
+      execute "brew list pixman"
+      execute "ls", "-laR", "/usr/local/opt/pixman/lib/", "/usr/local/lib/"
       
     end
 
