@@ -357,6 +357,9 @@ class CIRunner
       packages = %w[ninja pixman glib meson libslirp dtc python-setuptools]
       execute "brew", "install", *packages, env: { HOMEBREW_NO_INSTALL_CLEANUP: true }
       execute "pip3", "install", "packaging"
+
+      execute "ls", "-laR", "/usr/local/opt/pixman/lib/", "/usr/local/lib/", "/usr/local/opt/lib"
+      
     end
 
     class Qemu < Host::Qemu
